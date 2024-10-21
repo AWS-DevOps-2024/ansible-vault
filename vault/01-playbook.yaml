@@ -1,0 +1,6 @@
+- name: Ping the Server
+  hosts: web # take from inventory file
+  become: yes   
+  tasks:
+    - name: Ping the Server
+      ansible.builtin.ping:
